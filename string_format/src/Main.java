@@ -35,7 +35,5 @@ public class Main {
         System.out.println(word2);
         System.out.println(word3);
 
-
-
     }
 }
