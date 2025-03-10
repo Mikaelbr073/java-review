@@ -2,17 +2,17 @@ package entities;
 
 public class Emplyoee {
 
-    private String id;
+    private int id;
     private String name;
     private double salary;
 
-    public Emplyoee (String id, String name, double salary){
+    public Emplyoee (int id, String name, double salary){
         this.id = id;
         this.name = name;
         this.salary = salary;
     }
 
-    public String getId() {
+    public int getId() {
         return id;
     }
 
@@ -29,6 +29,11 @@ public class Emplyoee {
     }
 
     public void updateSalary(double percentage){
+     salary += ((percentage/100) * salary);
+    }
 
+    @Override
+    public String toString() {
+        return "id: " + id + ",name: " + name + ",salary: " + salary;
     }
 }
