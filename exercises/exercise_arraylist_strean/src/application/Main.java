@@ -59,7 +59,7 @@ public class Main {
             System.out.println(emp);
         }
 
-
+        //CLOSE SCANNER
         sc.close();
 
 
